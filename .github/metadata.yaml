@@ -1,0 +1,6 @@
+description: "HTTP delivery over RFC 9110 messages: entity tags, 304, gzip and Vary, with a Hummingbird bridge behind a trait."
+topics:
+  - compositions
+  - http
+  - server
+homepage: "https://swift-institute.org"
