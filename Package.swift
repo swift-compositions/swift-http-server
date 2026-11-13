@@ -27,11 +27,7 @@ let package = Package(
         .package(url: "https://github.com/hummingbird-project/hummingbird.git", exact: "2.28.1"),
     ],
     targets: [
-        .systemLibrary(
-            name: "Zlib Shims",
-            pkgConfig: "zlib",
-            providers: [.apt(["zlib1g-dev"]), .brew(["zlib"])]
-        ),
+        .systemLibrary(name: "Zlib Shims"),
         .target(
             name: "HTTP Gzip",
             dependencies: [
