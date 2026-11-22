@@ -13,9 +13,9 @@
             limit: { _ in 8 },
             answer: { request in
                 let host = request.headers[.host].first?.rawValue ?? ""
-                return RFC_9110.Message.Response(
+                return IETF.RFC.`9110`.Message.Response(
                     status: .ok,
-                    headers: [RFC_9110.Field(name: .contentType, value: RFC_9110.Field.Value(unchecked: "text/plain"))],
+                    headers: [IETF.RFC.`9110`.Field(name: .contentType, value: IETF.RFC.`9110`.Field.Value(unchecked: "text/plain"))],
                     content: [Byte](utf8: "\(request.method.rawValue) \(host) \((request.content ?? []).count)")
                 )
             }

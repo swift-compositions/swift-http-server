@@ -1,6 +1,6 @@
 public import RFC_9110
 
-extension RFC_9110.MediaType {
+extension IETF.RFC.`9110`.MediaType {
 
     public var isTextual: Bool {
         let type = type.lowercased()
